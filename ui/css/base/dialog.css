@@ -1,0 +1,97 @@
+.dialog{
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-width: 500px; 
+    min-height: 200px; 
+}
+
+.dialog__button--close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+    background-color: #fff;
+    border:none;
+    background-image: url(../../assets/icon/x.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.dialog__button--close:hover {
+    background-color: #bbbbbb;
+}
+
+.dialog__header {
+    padding: 0 24px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dialog__header--content{
+    padding: 24px 0;
+}
+
+.dialog__content {
+    display: flex;
+    flex: 1;
+}
+
+.dialog__icon {
+    background-color: #e5e5e5;
+    background-image: url(../../assets/icon/warning.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 24px;
+}
+
+.dialog__text {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 24px;
+}
+
+.dialog__footer {
+    height: 60px;
+    padding-right: 24px;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.button__cancel {
+    margin-right: 16px;
+    background-color: #e5e5e5;
+    color: #454545;
+}
+
+.button__cancel:hover, .button__cancel:focus{
+    background-color: #bbbbbb;
+    color: #454545;
+}

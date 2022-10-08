@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.menu__item:hover {
+    background-color: #e5e5e5;
+    color: #454545;
+}
+
+.menu__item--selected {
+    background-color: #019160;
+    color: #ffffff;
+}
+
+.menu__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.menu__text {
+    margin-left: 10px;
+}
